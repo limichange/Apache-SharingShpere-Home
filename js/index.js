@@ -1,7 +1,10 @@
-var animation = lottie.loadAnimation({
-  container: document.getElementById('lottie'), // Required
-  path: './lottiefiles/lf20_lrx1ahrj.json', // Required
-  renderer: 'canvas', // Required
-  loop: true, // Optional
-  autoplay: true, // Optional
+//
+// First Section
+//
+const animation = lottie.loadAnimation({
+  container: document.getElementById('lottie'),
+  path: './lottiefiles/lf20_lrx1ahrj.json',
+  renderer: 'canvas',
+  loop: true,
+  autoplay: true,
 })
