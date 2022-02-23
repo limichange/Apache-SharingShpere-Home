@@ -8,9 +8,38 @@
 }
 
 #coreValue .content .main {
-  width: 50%;
+  width: 45%;
+}
+
+#coreValue .content .main h1 {
+  /* EN/Heading 2 */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  /* Gray 800 */
+  color: #393c4e;
+  max-width: 400px;
+  margin: 16px 0;
+}
+
+#coreValue .content .main .titleDescription {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* Orange 800 */
+  color: #f6712e;
+}
+
+#coreValue .content .main p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 24px 0;
 }
 
 #coreValue .content .list {
-  width: 50%;
+  width: 45%;
 }
