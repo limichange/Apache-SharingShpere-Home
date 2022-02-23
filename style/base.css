@@ -1,3 +1,7 @@
+/* 
+ * container
+ */
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -37,4 +41,56 @@
   .container {
     max-width: 1536px;
   }
+}
+
+/* 
+ * button
+ */
+
+button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 8px 40px;
+  text-align: center;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+button.primary {
+  /* Orange 700 */
+  background: #fe8244;
+  border-color: #fe8244;
+  color: #ffffff;
+}
+
+button.primary:hover {
+  border-color: #ffb895;
+}
+
+button.primary:active {
+  background-color: white;
+  border-color: #fe8244;
+  color: #fe8244;
+}
+
+button.outline {
+  /* Gray 300 */
+  background: transparent;
+  border-color: #fe8244;
+  color: #fe8244;
+}
+
+button.outline:hover {
+  border-color: #fe8244;
+  color: #fe8244;
+}
+
+button.outline:active {
+  background-color: #fe8244;
+  border-color: #fe8244;
+  color: #ffffff;
 }
