@@ -3,6 +3,21 @@ footer {
   padding: 80px 0;
   /* Gray 300 */
   background: #f7f7fb;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .text {
+  display: block;
+  max-width: 600px;
   /* Gray 600 */
   color: #9c9da7;
+}
+
+footer .logos img {
+  margin-right: 24px;
 }
