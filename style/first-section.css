@@ -26,7 +26,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
-  line-height: 56px;
   text-align: center;
   /* Gray 900 */
   color: #080b22;
@@ -37,11 +36,11 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 32px;
   /* identical to box height, or 160% */
   text-align: center;
   /* Orange 800 */
   color: #f6712e;
+  word-spacing: 16px;
 }
 
 #lottie {
