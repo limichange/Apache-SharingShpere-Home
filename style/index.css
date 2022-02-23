@@ -1,5 +1,12 @@
-body,
 html {
-  padding: 0;
-  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    'PingFang SC', 'Microsoft YaHei', 'Source Han Sans SC', 'Noto Sans CJK SC',
+    'WenQuanYi Micro Hei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #393c4e;
 }

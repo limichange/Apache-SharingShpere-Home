@@ -23,7 +23,6 @@
 }
 
 #firstSection .content .title {
-  font-family: Styrene A;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -35,7 +34,6 @@
 
 #firstSection .content .subtitle {
   /* EN/Heading 4 */
-  font-family: Styrene A;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -48,5 +46,5 @@
 
 #lottie {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
