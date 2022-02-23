@@ -43,3 +43,13 @@
 #coreValue .content .list {
   width: 45%;
 }
+
+#coreValue .content .list .card {
+  /* Gray 300 */
+  background: #f7f7fb;
+  border-radius: 12px;
+  padding: 24px 24px 60px 24px;
+}
+
+#coreValue .content .list .card .title {
+}
