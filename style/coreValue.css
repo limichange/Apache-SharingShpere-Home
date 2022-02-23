@@ -1,0 +1,16 @@
+#coreValue {
+  width: 100%;
+}
+
+#coreValue .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#coreValue .content .main {
+  width: 50%;
+}
+
+#coreValue .content .list {
+  width: 50%;
+}
