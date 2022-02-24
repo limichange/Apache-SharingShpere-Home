@@ -1,8 +1,8 @@
 #coreValue {
   width: 100%;
   position: relative;
-  padding-bottom: 50px;
-  margin-bottom: 80px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #coreValue .content {
@@ -38,7 +38,8 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  margin: 0 0 24px 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 #coreValue .content .list .card {
@@ -51,6 +52,11 @@
 }
 
 @media (min-width: 1124px) {
+  #coreValue .content .main p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
   #coreValue .content .list {
     margin-top: 60px;
     display: flex;
@@ -95,6 +101,11 @@
 }
 
 @media (min-width: 1124px) {
+  #coreValue {
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+  }
+
   #coreValue .content .main h1 {
     font-size: 40px;
     line-height: 56px;
