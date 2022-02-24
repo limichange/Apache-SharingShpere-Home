@@ -4,7 +4,7 @@
 let animation = lottie.loadAnimation({
   container: document.getElementById('lottie'),
   path: './lottiefiles/lf20_lrx1ahrj.json',
-  renderer: 'canvas',
+  renderer: 'svg',
   loop: true,
   autoplay: true,
 })
@@ -14,11 +14,10 @@ animation.setSubframe(false)
 $(document).ready(function () {
   $('.roadmapSlick').slick({
     infinite: false,
-    initialSlide: 2,
+    initialSlide: 0,
     speed: 300,
     variableWidth: true,
     draggable: false,
-    centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
