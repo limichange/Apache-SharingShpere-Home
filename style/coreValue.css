@@ -8,7 +8,7 @@
 }
 
 #coreValue .content .main {
-  width: 45%;
+  width: 50%;
 }
 
 #coreValue .content .main h1 {
@@ -41,7 +41,12 @@
 }
 
 #coreValue .content .list {
-  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#coreValue .content .list .listRight {
+  margin-top: 80px;
 }
 
 #coreValue .content .list .card {
@@ -49,7 +54,35 @@
   background: #f7f7fb;
   border-radius: 12px;
   padding: 24px 24px 60px 24px;
+
+  width: 240px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+
+#coreValue .content .list .card .icon {
+  display: block;
+  width: 64px;
+  height: 64px;
 }
 
 #coreValue .content .list .card .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  /* Gray 900 */
+  color: #080b22;
+  margin-top: 12px;
+  display: block;
+}
+
+#coreValue .content .list .card .description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* Gray 900 */
+  color: #080b22;
+  opacity: 0.8;
 }
