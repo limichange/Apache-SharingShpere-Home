@@ -7,37 +7,37 @@
   margin: 0 auto;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 740px) {
   .container {
     max-width: 640px;
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 820px) {
   .container {
     max-width: 720px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
   .container {
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
   .container {
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1380px) {
   .container {
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1636px) {
   .container {
     max-width: 1536px;
   }

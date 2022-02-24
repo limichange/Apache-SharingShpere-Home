@@ -14,10 +14,11 @@ animation.setSubframe(false)
 $(document).ready(function () {
   $('.roadmapSlick').slick({
     infinite: false,
+    initialSlide: 2,
     speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 5,
     variableWidth: true,
+    draggable: false,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
