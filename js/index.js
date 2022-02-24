@@ -30,4 +30,19 @@ $(document).ready(function () {
       },
     ],
   })
+
+  $('.navigation .iconMenu').click(function () {
+    $('.mobileMenu').show()
+  })
+
+  $('.languageSelect + .langs').hide()
+
+  $('.mobileMenu .x').click(function () {
+    $('.mobileMenu').hide()
+  })
+
+  $('.languageSelect').click(function () {
+    $('.languageSelect + .langs').toggle()
+    $('.languageSelect .arrowIcon').toggleClass('active')
+  })
 })

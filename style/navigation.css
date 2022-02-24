@@ -4,8 +4,9 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 28px;
+  padding: 30px 20px;
   z-index: 10000;
+  backdrop-filter: blur(5px);
 }
 
 .navigation .content {
@@ -22,7 +23,9 @@
 }
 
 .navigation .logos img {
-  margin-right: 24px;
+  margin-right: 12px;
+  height: 30px;
+  width: auto;
 }
 
 .navigation a {
@@ -42,8 +45,101 @@
   margin-right: 40px;
 }
 
-@media (max-width: 868px) {
+.navigation .iconMenu {
+  width: 40px;
+  height: 40px;
+  background-image: url('/images/navigation/menu.svg');
+  display: block;
+  cursor: pointer;
+}
+
+.navigation .links {
+  display: none;
+}
+
+.mobileMenu {
+  position: fixed;
+  z-index: 88888;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 30px 20px;
+}
+
+.mobileMenu .header {
+  margin-bottom: 16px;
+}
+
+.mobileMenu .header .logos img {
+  height: 30px;
+  width: auto;
+}
+
+.mobileMenu .header,
+.mobileMenu .header .logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileMenu .header .logos img:first-child {
+  margin-right: 12px;
+}
+
+.mobileMenu .buttons button {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.mobileMenu .x {
+  width: 40px;
+  height: 40px;
+  background-image: url('/images/navigation/x.svg');
+  display: block;
+  cursor: pointer;
+  margin-right: -6px;
+}
+
+.mobileMenu .arrowIcon {
+  width: 40px;
+  height: 40px;
+  background-image: url('/images/navigation/arrow.svg');
+  margin-right: -8px;
+}
+
+.mobileMenu .arrowIcon.active {
+  transform: rotate(90deg);
+  margin-right: 0;
+}
+
+.mobileMenuList a,
+.mobileMenuList .languageSelect {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* Gray 900 */
+  color: #080b22;
+  display: block;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.languageSelect + .langs {
+  padding-left: 20px;
+}
+
+@media (min-width: 868px) {
   .navigation .links {
+    display: block;
+  }
+
+  .navigation .iconMenu {
     display: none;
   }
 }
