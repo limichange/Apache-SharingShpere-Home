@@ -41,25 +41,30 @@
   margin: 0 0 24px 0;
 }
 
-#coreValue .content .list {
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#coreValue .content .list .listRight {
-  margin-top: 80px;
-}
-
 #coreValue .content .list .card {
   /* Gray 300 */
   background: #f7f7fb;
   border-radius: 12px;
-  padding: 24px 24px 60px 24px;
+  padding: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+}
 
-  width: 240px;
-  margin-bottom: 32px;
-  margin-left: 32px;
+@media (min-width: 1124px) {
+  #coreValue .content .list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #coreValue .content .list .listRight {
+    margin-top: 80px;
+  }
+
+  #coreValue .content .list .card {
+    padding: 24px 24px 60px 24px;
+    width: 240px;
+  }
 }
 
 #coreValue .content .list .card .icon {
@@ -89,33 +94,6 @@
   opacity: 0.8;
 }
 
-#coreValue .icon1 {
-  position: absolute;
-  right: 0;
-  top: -20px;
-  width: 231px;
-  height: 122px;
-  background-image: url('/images/coreValue/icon1.svg');
-}
-
-#coreValue .icon2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 231px;
-  height: 122px;
-  background-image: url('/images/coreValue/icon2.svg');
-}
-
-#coreValue .icon3 {
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  width: 158px;
-  height: 48px;
-  background-image: url('/images/coreValue/icon3.svg');
-}
-
 @media (min-width: 1124px) {
   #coreValue .content {
     flex-direction: row;
@@ -123,5 +101,42 @@
 
   #coreValue .content .main {
     width: 50%;
+  }
+
+  #coreValue .content .list {
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+
+  #coreValue .content .list .card {
+    margin-bottom: 32px;
+    margin-left: 32px;
+  }
+
+  #coreValue .icon1 {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 231px;
+    height: 122px;
+    background-image: url('/images/coreValue/icon1.svg');
+  }
+
+  #coreValue .icon2 {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 231px;
+    height: 122px;
+    background-image: url('/images/coreValue/icon2.svg');
+  }
+
+  #coreValue .icon3 {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 158px;
+    height: 48px;
+    background-image: url('/images/coreValue/icon3.svg');
   }
 }

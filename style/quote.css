@@ -1,32 +1,23 @@
-#quoteSection {
-  padding: 38px;
-}
-
 #quoteSection .card {
   /* Orange 800 */
   background-color: #f6712e;
+  box-shadow: 0px 12px 12px rgba(246, 113, 46, 0.1);
   border-radius: 20px;
-  padding: 64px 0;
+  padding: 84px 0;
   position: relative;
-
-  background-image: url('/images/quote/noise-texture-left.png'),
-    url('/images/quote/noise-texture-right.png');
-  background-position: left center, right center;
-  background-repeat: no-repeat;
 }
 
 #quoteSection .card .text {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 24px;
   color: white;
 }
 
 #quoteSection .textWrap {
-  max-width: 820px;
   position: relative;
-  margin-left: 150px;
+  margin: 0 16px;
 }
 
 #quoteSection .leftPoint {
@@ -34,29 +25,86 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  left: -26px;
-  top: -12px;
+  left: 0;
+  top: -20px;
 }
 
-#quoteSection .icon1 {
-  width: 50px;
-  height: 50px;
-  background: url('/images/quote/icon1.svg') no-repeat;
-  position: absolute;
-  left: 28px;
-  top: 28px;
-}
-
-#quoteSection .icon2 {
-  width: 148px;
-  height: 101px;
-  background: url('/images/quote/icon2.svg') no-repeat;
+#quoteSection .mobileIcon1 {
+  background: url('/images/quote/mobileIcon1.svg') no-repeat;
+  width: 100px;
+  height: 56px;
   position: absolute;
   right: 0;
-  top: 60px;
+  bottom: 0px;
 }
 
-@media (min-width: 1124px) {
+#quoteSection .mobileIcon2 {
+  background: url('/images/quote/mobileIcon2.svg') no-repeat;
+  width: 96px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+
+#quoteSection .mobileIcon3 {
+  background: url('/images/quote/mobileIcon3.svg') no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+@media (min-width: 1380px) {
+  #quoteSection {
+    padding: 38px 0;
+  }
+
+  #quoteSection .card {
+    /* Orange 800 */
+    background-color: #f6712e;
+    border-radius: 20px;
+    padding: 64px 0;
+    position: relative;
+
+    background-image: url('/images/quote/noise-texture-left.png'),
+      url('/images/quote/noise-texture-right.png');
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+  }
+
+  #quoteSection .card .text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+  }
+
+  #quoteSection .textWrap {
+    max-width: 820px;
+    margin-left: 150px;
+  }
+
+  #quoteSection .icon1 {
+    width: 50px;
+    height: 50px;
+    background: url('/images/quote/icon1.svg') no-repeat;
+    position: absolute;
+    left: 28px;
+    top: 28px;
+  }
+
+  #quoteSection .icon2 {
+    width: 148px;
+    height: 101px;
+    background: url('/images/quote/icon2.svg') no-repeat;
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+
   #quoteSection .icon3 {
     width: 50px;
     height: 50px;
@@ -64,6 +112,17 @@
     position: absolute;
     left: 990px;
     bottom: 10px;
+  }
+
+  #quoteSection .mobileIcon1,
+  #quoteSection .mobileIcon2,
+  #quoteSection .mobileIcon3 {
+    display: none !important;
+  }
+
+  #quoteSection .leftPoint {
+    left: -26px;
+    top: -12px;
   }
 
   #quoteSection .rightPoint {
