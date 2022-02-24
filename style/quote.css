@@ -1,3 +1,7 @@
+#quoteSection {
+  padding: 38px;
+}
+
 #quoteSection .card {
   /* Orange 800 */
   background-color: #f6712e;

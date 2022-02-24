@@ -1,5 +1,6 @@
 #roadmapSection .container {
   position: relative;
+  padding-bottom: 120px;
 }
 
 #roadmapSection .maintitle {
@@ -8,9 +9,9 @@
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
-  line-height: 56px;
   /* Gray 900 */
   color: #080b22;
+  margin: 110px 0;
 }
 
 #roadmapSection .cardItem {
