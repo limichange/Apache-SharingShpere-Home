@@ -41,3 +41,9 @@
 .links > a {
   margin-right: 40px;
 }
+
+@media (max-width: 868px) {
+  .navigation .links {
+    display: none;
+  }
+}

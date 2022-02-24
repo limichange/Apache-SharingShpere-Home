@@ -146,3 +146,39 @@
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+@media (max-width: 868px) {
+  #roadmapSection .maintitle {
+    font-family: Styrene A web;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    /* Gray 900 */
+    color: #080b22;
+    margin: 50px 0;
+  }
+
+  #roadmapSection .container {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  #roadmapSection .cardItem:first-child,
+  #roadmapSection .shadow,
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+  #roadmapSection .cardItem:nth-child(2) .point::before {
+    /* Orange 2 */
+    height: 2px;
+    background-color: #f6712e;
+    content: ' ';
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    width: 500px;
+  }
+}
