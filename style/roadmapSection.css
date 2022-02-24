@@ -1,3 +1,7 @@
+#roadmapSection .container {
+  position: relative;
+}
+
 #roadmapSection .maintitle {
   font-family: Styrene A web;
   text-align: center;
@@ -113,4 +117,18 @@
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+#roadmapSection .shadow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 88px;
+  background: linear-gradient(
+    90deg,
+    #ffffff 31.44%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
