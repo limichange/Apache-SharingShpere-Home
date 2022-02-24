@@ -8,16 +8,31 @@ footer {
 footer .content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 footer .text {
+  font-size: 13px;
+  line-height: 20px;
   display: block;
-  max-width: 600px;
   /* Gray 600 */
   color: #9c9da7;
 }
 
 footer .logos img {
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-right: 24px;
+}
+
+@media (min-width: 1124px) {
+  footer .content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer .text {
+    max-width: 600px;
+  }
 }
