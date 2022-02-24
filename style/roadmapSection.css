@@ -9,14 +9,60 @@
   color: #080b22;
 }
 
+#roadmapSection .cardItem {
+  width: 220px;
+  margin: 12px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+#roadmapSection .cardItem .point {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  /* Orange 2 */
+  background: #f6712e;
+  position: absolute;
+  left: 50%;
+  margin-top: 35px;
+  margin-left: -9px;
+}
+
+#roadmapSection .cardItem.inactive .point {
+  background: #e7e7f3;
+}
+
+#roadmapSection .cardItem.inactive .point::before {
+  background-color: transparent;
+  background-image: url('/images/roadmap/line.svg');
+}
+
+#roadmapSection .cardItem .point::before {
+  /* Orange 2 */
+  height: 2px;
+  background-color: #f6712e;
+  content: ' ';
+  position: absolute;
+  right: 28px;
+  top: 8px;
+  width: 206px;
+}
+
 #roadmapSection .card {
   width: 220px;
   height: 260px;
-  margin: 12px;
   background: #f7f7fb;
   border-radius: 12px;
   padding: 20px;
   position: relative;
+}
+
+#roadmapSection .card.inactive .version,
+#roadmapSection .card.inactive .title,
+#roadmapSection .card.inactive .year,
+#roadmapSection .card.inactive .content {
+  /* Gray 700 */
+  color: #6b6d7a !important;
 }
 
 #roadmapSection .card .version {
@@ -58,4 +104,13 @@
   position: absolute;
   left: 20px;
   bottom: 20px;
+}
+
+#roadmapSection .card .flag {
+  width: 23px;
+  height: 25px;
+  background-image: url('/images/roadmap/flag.svg');
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
