@@ -34,15 +34,6 @@
   top: -12px;
 }
 
-#quoteSection .rightPoint {
-  background: url('/images/quote/right.svg') no-repeat;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: -2px;
-  bottom: -20px;
-}
-
 #quoteSection .icon1 {
   width: 50px;
   height: 50px;
@@ -61,11 +52,22 @@
   top: 60px;
 }
 
-#quoteSection .icon3 {
-  width: 50px;
-  height: 50px;
-  background: url('/images/quote/icon1.svg') no-repeat;
-  position: absolute;
-  left: 990px;
-  bottom: 10px;
+@media (min-width: 1124px) {
+  #quoteSection .icon3 {
+    width: 50px;
+    height: 50px;
+    background: url('/images/quote/icon1.svg') no-repeat;
+    position: absolute;
+    left: 990px;
+    bottom: 10px;
+  }
+
+  #quoteSection .rightPoint {
+    background: url('/images/quote/right.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -2px;
+    bottom: -20px;
+  }
 }

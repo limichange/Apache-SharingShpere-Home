@@ -174,3 +174,6 @@
   opacity: 0.75;
   color: black;
 }
+
+@media (min-width: 1124px) {
+}
