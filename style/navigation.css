@@ -28,7 +28,8 @@
   width: auto;
 }
 
-.navigation a {
+.navigation a,
+.i-drop-btn > span {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -37,11 +38,8 @@
   /* Gray 900 */
   color: #080b22;
 }
-.navigation a:hover {
-  opacity: 0.6;
-}
 
-.links > a {
+.links > * {
   margin-right: 40px;
 }
 
@@ -56,6 +54,53 @@
 .navigation .links {
   display: none;
 }
+
+.i-drop-btn {
+  position: relative;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+}
+
+.i-drop-btn .i-drop-pop {
+  z-index: 1;
+  position: absolute;
+  min-width: 130px;
+  background-color: white;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  text-align: left;
+  display: none;
+}
+
+.i-drop-btn:hover .i-drop-pop {
+  display: block;
+}
+
+.dropListItem {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.dropListItem a {
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+  padding: 0 12px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.dropListItem a:hover {
+  color: #f28d25;
+  /* Gray 400 */
+  background-color: #f3f4f6;
+}
+
+/* mobile */
 
 .mobileMenu {
   position: fixed;
@@ -134,9 +179,22 @@
   padding-left: 20px;
 }
 
+.navigation .langs {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .langs .l {
+  height: 18px;
+  margin: 0 8px;
+  border-left: 1px solid black;
+}
+
 @media (min-width: 868px) {
   .navigation .links {
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 40px;
   }
 
   .navigation .iconMenu {
