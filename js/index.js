@@ -38,6 +38,23 @@ $(document).ready(function () {
       } else {
         $('.shadow.left').hide()
       }
+
+      var rightEndIndex = 4
+
+      // get window width
+      var windowWidth = $(window).width()
+
+      if (windowWidth > 1368) {
+        rightEndIndex = 2
+      } else if (windowWidth > 1068) {
+        rightEndIndex = 3
+      }
+
+      if (nextSlide > rightEndIndex) {
+        $('.slick-next.slick-arrow').hide()
+      } else {
+        $('.slick-next.slick-arrow').show()
+      }
     }
   )
 
