@@ -56,6 +56,29 @@
   top: 40px;
 }
 
+@media (min-width: 740px) {
+  #quoteSection .textWrap {
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 820px) {
+  #quoteSection .textWrap {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 1124px) {
+  #quoteSection .textWrap {
+    margin: 0 80px;
+  }
+
+  #quoteSection .card .text {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
 @media (min-width: 1380px) {
   #quoteSection {
     padding: 38px 0;
