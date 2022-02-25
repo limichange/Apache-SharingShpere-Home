@@ -41,6 +41,7 @@
   line-height: 24px;
   /* Gray 900 */
   color: #080b22;
+  transition: all 100ms ease;
 }
 
 .navigation a:hover {
@@ -209,9 +210,9 @@
 }
 
 .navigation .langs .l {
-  height: 18px;
+  height: 14px;
   margin: 0 8px;
-  border-left: 1px solid black;
+  border-left: 1px solid rgba(0, 0, 0, 0.24);
 }
 
 @media (min-width: 1000px) {
