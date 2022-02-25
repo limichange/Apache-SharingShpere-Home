@@ -4,7 +4,6 @@
 }
 
 #roadmapSection .maintitle {
-  font-family: Styrene A web;
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -72,7 +71,6 @@
 
 #roadmapSection .card .version {
   /* EN/Subtitle 1 */
-  font-family: Styrene A web;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -82,7 +80,6 @@
 }
 
 #roadmapSection .card .title {
-  font-family: Styrene A web;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -149,7 +146,6 @@
 
 @media (max-width: 868px) {
   #roadmapSection .maintitle {
-    font-family: Styrene A web;
     text-align: center;
     font-style: normal;
     font-weight: bold;
