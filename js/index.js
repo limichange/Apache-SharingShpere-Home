@@ -14,7 +14,6 @@ animation.setSubframe(false)
 $(document).ready(function () {
   $('.roadmapSlick').slick({
     infinite: false,
-    initialSlide: 0,
     speed: 300,
     variableWidth: true,
     draggable: false,
@@ -30,6 +29,19 @@ $(document).ready(function () {
       },
     ],
   })
+
+  $('.roadmapSlick').on(
+    'beforeChange',
+    function (event, slick, currentSlide, nextSlide) {
+      if (nextSlide > 0) {
+        $('.shadow.left').show()
+      } else {
+        $('.shadow.left').hide()
+      }
+    }
+  )
+
+  $('.shadow.left').hide()
 
   $('.navigation .iconMenu').click(function () {
     $('.mobileMenu').show()
