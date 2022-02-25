@@ -49,10 +49,10 @@
 }
 
 .links > * {
-  margin-right: 24px;
+  margin-right: 16px;
 }
 
-@media (min-width: 1124px) {
+@media (min-width: 1200px) {
   .links > * {
     margin-right: 32px;
   }
