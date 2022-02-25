@@ -1,6 +1,6 @@
 #firstSection {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   position: relative;
   overflow: hidden;
 }
@@ -33,7 +33,8 @@
   /* Gray 900 */
   color: #080b22;
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-top: 24px;
+  margin-bottom: 4px;
 }
 
 #firstSection .content .subtitle {
@@ -80,8 +81,12 @@
 
 @media (min-width: 868px) {
   #firstSection .logo {
-    width: 124px;
-    height: 124px;
+    width: 160px;
+    height: 160px;
+  }
+
+  #firstSection .content .title {
+    font-size: 48px;
   }
 
   #firstSection .content {
@@ -89,11 +94,11 @@
   }
 
   #firstSection .content .subtitle {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   #lottie {
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
 
   #firstSection .buttons {
@@ -103,9 +108,5 @@
 
   #firstSection .buttons button {
     width: 170px;
-  }
-
-  #firstSection .content .title {
-    font-size: 40px;
   }
 }
