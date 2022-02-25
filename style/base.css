@@ -80,7 +80,7 @@ button.primary:active {
 
 button.outline {
   /* Gray 300 */
-  background: transparent;
+  background: white;
   border-color: #fe8244;
   color: #fe8244;
 }
