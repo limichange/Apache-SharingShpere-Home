@@ -3,7 +3,7 @@
   background-color: #f6712e;
   box-shadow: 0px 12px 12px rgba(246, 113, 46, 0.1);
   border-radius: 20px;
-  padding: 84px 0;
+  padding: 80px 32px;
   position: relative;
 }
 
@@ -21,7 +21,7 @@
 }
 
 #quoteSection .leftPoint {
-  background: url('/images/quote/left.svg') no-repeat;
+  background: url("/images/quote/left.svg") no-repeat;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -30,7 +30,7 @@
 }
 
 #quoteSection .mobileIcon1 {
-  background: url('/images/quote/mobileIcon1.svg') no-repeat;
+  background: url("/images/quote/mobileIcon1.svg") no-repeat;
   width: 100px;
   height: 56px;
   position: absolute;
@@ -39,7 +39,7 @@
 }
 
 #quoteSection .mobileIcon2 {
-  background: url('/images/quote/mobileIcon2.svg') no-repeat;
+  background: url("/images/quote/mobileIcon2.svg") no-repeat;
   width: 96px;
   height: 40px;
   position: absolute;
@@ -48,7 +48,7 @@
 }
 
 #quoteSection .mobileIcon3 {
-  background: url('/images/quote/mobileIcon3.svg') no-repeat;
+  background: url("/images/quote/mobileIcon3.svg") no-repeat;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -91,8 +91,8 @@
     padding: 64px 0;
     position: relative;
 
-    background-image: url('/images/quote/noise-texture-left.png'),
-      url('/images/quote/noise-texture-right.png');
+    background-image: url("/images/quote/noise-texture-left.png"),
+      url("/images/quote/noise-texture-right.png");
     background-position: left center, right center;
     background-repeat: no-repeat;
   }
@@ -113,7 +113,7 @@
   #quoteSection .icon1 {
     width: 50px;
     height: 50px;
-    background: url('/images/quote/icon1.svg') no-repeat;
+    background: url("/images/quote/icon1.svg") no-repeat;
     position: absolute;
     left: 28px;
     top: 28px;
@@ -122,7 +122,7 @@
   #quoteSection .icon2 {
     width: 148px;
     height: 101px;
-    background: url('/images/quote/icon2.svg') no-repeat;
+    background: url("/images/quote/icon2.svg") no-repeat;
     position: absolute;
     right: 0;
     top: 60px;
@@ -131,7 +131,7 @@
   #quoteSection .icon3 {
     width: 50px;
     height: 50px;
-    background: url('/images/quote/icon1.svg') no-repeat;
+    background: url("/images/quote/icon1.svg") no-repeat;
     position: absolute;
     left: 990px;
     bottom: 10px;
@@ -149,7 +149,7 @@
   }
 
   #quoteSection .rightPoint {
-    background: url('/images/quote/right.svg') no-repeat;
+    background: url("/images/quote/right.svg") no-repeat;
     width: 20px;
     height: 20px;
     position: absolute;

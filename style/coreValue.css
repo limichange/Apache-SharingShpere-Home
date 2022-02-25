@@ -72,7 +72,7 @@
   }
 
   #coreValue .content .list .card {
-    padding: 24px 24px 60px 24px;
+    padding: 24px;
     width: 240px;
   }
 }
@@ -119,6 +119,7 @@
 
   #coreValue .content {
     flex-direction: row;
+    padding: 0 80px;
   }
 
   #coreValue .content .main {
@@ -141,7 +142,7 @@
     top: -20px;
     width: 231px;
     height: 122px;
-    background-image: url('/images/coreValue/icon1.svg');
+    background-image: url("/images/coreValue/icon1.svg");
   }
 
   #coreValue .icon2 {
@@ -150,7 +151,7 @@
     bottom: -20px;
     width: 231px;
     height: 122px;
-    background-image: url('/images/coreValue/icon2.svg');
+    background-image: url("/images/coreValue/icon2.svg");
   }
 
   #coreValue .icon3 {
@@ -159,6 +160,6 @@
     position: absolute;
     width: 158px;
     height: 48px;
-    background-image: url('/images/coreValue/icon3.svg');
+    background-image: url("/images/coreValue/icon3.svg");
   }
 }
