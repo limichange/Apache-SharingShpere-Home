@@ -75,12 +75,14 @@
 .i-drop-btn .i-drop-pop {
   z-index: 1;
   position: absolute;
-  min-width: 130px;
+  min-width: 160px;
   background-color: white;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   text-align: left;
   display: none;
+  padding: 8px 0;
+  left: -10px;
 }
 
 .i-drop-btn:hover .i-drop-pop {
@@ -90,14 +92,18 @@
 .dropListItem {
   display: flex;
   align-items: center;
-  height: 56px;
+  height: 44px;
   border-bottom: 1px solid #f3f4f6;
+}
+
+.dropListItem:last-child {
+  border-bottom: none;
 }
 
 .dropListItem a {
   display: block;
-  line-height: 40px;
-  height: 40px;
+  height: 44px;
+  line-height: 44px;
   width: 100%;
   padding: 0 12px;
   font-weight: 500;
