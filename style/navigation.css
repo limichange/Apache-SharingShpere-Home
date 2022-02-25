@@ -116,6 +116,7 @@
   right: 0;
   bottom: 0;
   background-color: white;
+  overflow: auto;
 }
 
 .mobileMenu .header {
@@ -162,14 +163,14 @@
   transform: rotate(90deg);
   margin-right: 0;
 }
-
+/*
 .mobileMenuList {
   padding: 0 20px;
   height: 500px;
   position: relative;
-  overflow: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
-}
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; 
+}*/
 
 .mobileMenuList a,
 .mobileMenuList .languageSelect,
