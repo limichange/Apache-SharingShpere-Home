@@ -51,6 +51,10 @@
   margin-bottom: 24px;
 }
 
+#coreValue .content .list {
+  margin-top: 40px;
+}
+
 @media (min-width: 1124px) {
   #coreValue .content .main p {
     font-size: 18px;
