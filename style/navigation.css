@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 30px 20px;
+  padding: 24px;
   z-index: 10000;
   backdrop-filter: blur(5px);
 }
@@ -23,8 +23,8 @@
 }
 
 .navigation .logos img {
-  margin-right: 12px;
-  height: 40px;
+  margin-right: 8px;
+  height: 56px;
   width: auto;
 }
 
@@ -40,13 +40,19 @@
 }
 
 .links > * {
-  margin-right: 40px;
+  margin-right: 24px;
+}
+
+@media (min-width: 1124px) {
+  .links > * {
+    margin-right: 40px;
+  }
 }
 
 .navigation .iconMenu {
   width: 40px;
   height: 40px;
-  background-image: url('/images/navigation/menu.svg');
+  background-image: url("/images/navigation/menu.svg");
   display: block;
   cursor: pointer;
 }
@@ -141,7 +147,7 @@
 .mobileMenu .x {
   width: 40px;
   height: 40px;
-  background-image: url('/images/navigation/x.svg');
+  background-image: url("/images/navigation/x.svg");
   display: block;
   cursor: pointer;
   margin-right: -6px;
@@ -150,7 +156,7 @@
 .mobileMenu .arrowIcon {
   width: 40px;
   height: 40px;
-  background-image: url('/images/navigation/arrow.svg');
+  background-image: url("/images/navigation/arrow.svg");
   margin-right: -8px;
 }
 
