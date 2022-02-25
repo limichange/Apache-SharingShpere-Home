@@ -66,14 +66,17 @@ $(document).ready(function () {
   })
 
   $('.languageSelect + .langs').hide()
+  $('.mobileMenu .itemList').hide()
+
+  $('.mobileMenu .item').click(function () {
+    // this item
+    var item = $(this)
+    item.find('.arrowIcon').toggleClass('active')
+    item.find('+ .itemList').slideToggle()
+  })
 
   $('.mobileMenu .x').click(function () {
     $('.mobileMenu').hide()
     bodyScrollLock.enableBodyScroll(document.querySelector('.mobileMenu'))
-  })
-
-  $('.languageSelect').click(function () {
-    $('.languageSelect + .langs').toggle()
-    $('.languageSelect .arrowIcon').toggleClass('active')
   })
 })

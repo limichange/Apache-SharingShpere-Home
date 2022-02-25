@@ -52,7 +52,7 @@
 .navigation .iconMenu {
   width: 40px;
   height: 40px;
-  background-image: url("/images/navigation/menu.svg");
+  background-image: url('/images/navigation/menu.svg');
   display: block;
   cursor: pointer;
 }
@@ -116,11 +116,10 @@
   right: 0;
   bottom: 0;
   background-color: white;
-  padding: 30px 20px;
 }
 
 .mobileMenu .header {
-  margin-bottom: 16px;
+  padding: 30px 20px;
 }
 
 .mobileMenu .header .logos img {
@@ -147,16 +146,15 @@
 .mobileMenu .x {
   width: 40px;
   height: 40px;
-  background-image: url("/images/navigation/x.svg");
+  background-image: url('/images/navigation/x.svg');
   display: block;
   cursor: pointer;
-  margin-right: -6px;
 }
 
 .mobileMenu .arrowIcon {
   width: 40px;
   height: 40px;
-  background-image: url("/images/navigation/arrow.svg");
+  background-image: url('/images/navigation/arrow.svg');
   margin-right: -8px;
 }
 
@@ -165,8 +163,17 @@
   margin-right: 0;
 }
 
+.mobileMenuList {
+  padding: 0 20px;
+  height: 500px;
+  position: relative;
+  overflow: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
 .mobileMenuList a,
-.mobileMenuList .languageSelect {
+.mobileMenuList .languageSelect,
+.mobileMenuList .item {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -181,7 +188,7 @@
   justify-content: space-between;
 }
 
-.languageSelect + .langs {
+.item + .itemList {
   padding-left: 20px;
 }
 
