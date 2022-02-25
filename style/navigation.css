@@ -43,6 +43,10 @@
   color: #080b22;
 }
 
+.navigation a:hover {
+  color: #f28d25;
+}
+
 .links > * {
   margin-right: 24px;
 }
