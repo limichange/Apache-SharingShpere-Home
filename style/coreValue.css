@@ -26,12 +26,13 @@
 }
 
 #coreValue .content .main .titleDescription {
+  font-family: 'Styrene A Web', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  /* Orange 800 */
-  color: #f6712e;
+  /* Orange 700 */
+  color: #fe8244;
 }
 
 #coreValue .content .main p {
