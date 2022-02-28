@@ -11,7 +11,7 @@
   font-size: 32px;
   /* Gray 900 */
   color: #080b22;
-  margin: 110px 0;
+  margin: 0 0 40px;
 }
 
 #roadmapSection .cardItem {
@@ -39,14 +39,14 @@
 
 #roadmapSection .cardItem.inactive .point::before {
   background-color: transparent;
-  background-image: url("/images/roadmap/line.svg");
+  background-image: url('/images/roadmap/line.svg');
 }
 
 #roadmapSection .cardItem .point::before {
   /* Orange 2 */
   height: 2px;
   background-color: #f6712e;
-  content: " ";
+  content: ' ';
   position: absolute;
   right: 28px;
   top: 8px;
@@ -114,7 +114,7 @@
 #roadmapSection .card .flag {
   width: 23px;
   height: 25px;
-  background-image: url("/images/roadmap/flag.svg");
+  background-image: url('/images/roadmap/flag.svg');
   position: absolute;
   right: 20px;
   top: 20px;
@@ -156,7 +156,6 @@
     font-size: 24px;
     /* Gray 900 */
     color: #080b22;
-    margin: 48px 0;
   }
 
   #roadmapSection .container {
@@ -174,7 +173,7 @@
     /* Orange 2 */
     height: 2px;
     background-color: #f6712e;
-    content: " ";
+    content: ' ';
     position: absolute;
     right: 28px;
     top: 8px;
