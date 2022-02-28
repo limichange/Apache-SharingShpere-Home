@@ -1,15 +1,15 @@
 //
 // First Section
 //
-let animation = lottie.loadAnimation({
-  container: document.getElementById('lottie'),
-  path: './lottiefiles/hero.json',
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-})
+// let animation = lottie.loadAnimation({
+//   container: document.getElementById('lottie'),
+//   path: './lottiefiles/hero.json',
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+// })
 
-animation.setSubframe(false)
+// animation.setSubframe(false)
 
 $(document).ready(function () {
   $('.roadmapSlick').slick({
