@@ -38,29 +38,12 @@
 }
 
 #firstSection .content .subtitle {
-  font-family: Styrene A web;
-  display: flex;
-  align-items: center;
-  /* EN/Heading 4 */
-  font-style: normal;
-  font-weight: bold;
   font-size: 16px;
-  /* identical to box height, or 160% */
   text-align: center;
+  padding: 8px 20px;
+  max-width: 640px;
   /* Gray 800 */
   color: #393c4e;
-}
-
-#firstSection .content .subtitle .key {
-  display: flex;
-  align-items: center;
-  margin: 8px;
-}
-
-#firstSection .content .subtitle img {
-  width: 24px;
-  height: 24px;
-  display: block;
 }
 
 #firstSection .buttons {
@@ -112,22 +95,11 @@
     padding: 0;
   }
 
-  #firstSection .content .subtitle {
-    font-size: 24px;
-  }
-
-  #firstSection .content .subtitle img {
-    margin-right: 8px;
-    width: 32px;
-    height: 32px;
-  }
-
   #lottie {
     transform: scale(1.5);
   }
 
   #firstSection .buttons {
-    margin-top: 24px;
     flex-direction: row;
   }
 
