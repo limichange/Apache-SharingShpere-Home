@@ -19,7 +19,7 @@ animate()
 
 function init() {
   container = document.createElement('div')
-  document.body.appendChild(container)
+  document.getElementById('threejs').appendChild(container)
 
   camera = new THREE.PerspectiveCamera(
     75,
@@ -60,7 +60,7 @@ function init() {
 
   const material = new THREE.ShaderMaterial({
     uniforms: {
-      color: { value: new THREE.Color(0xffffff) },
+      color: { value: new THREE.Color(0xf6712e) },
     },
     vertexShader: document.getElementById('vertexshader').textContent,
     fragmentShader: document.getElementById('fragmentshader').textContent,
@@ -73,7 +73,7 @@ function init() {
 
   //
 
-  renderer = new THREE.WebGLRenderer({ antialias: true })
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(window.innerWidth, window.innerHeight)
   container.appendChild(renderer.domElement)
@@ -82,7 +82,10 @@ function init() {
   container.appendChild(stats.dom)
 
   container.style.touchAction = 'none'
-  container.addEventListener('pointermove', onPointerMove)
+  // container.addEventListener('pointermove', onPointerMove)
+  document
+    .getElementById('firstSection')
+    .addEventListener('pointermove', onPointerMove)
 
   //
 
