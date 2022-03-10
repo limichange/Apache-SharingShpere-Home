@@ -27,7 +27,9 @@ function init() {
     1,
     10000
   )
-  // camera.position.z = 1000
+  camera.position.z = 2000
+  camera.position.x = 2000
+  camera.position.y = 2000
 
   scene = new THREE.Scene()
 
@@ -80,17 +82,16 @@ function init() {
 
   const controls = new THREE.OrbitControls(camera, renderer.domElement)
 
-  camera.position.set(0, 20, 20)
-  controls.update()
+  // camera.position.set(0, 20, 20)
+  // controls.update()
 
   stats = new Stats()
   container.appendChild(stats.dom)
 
   container.style.touchAction = 'none'
   // container.addEventListener('pointermove', onPointerMove)
-  document
-    .getElementById('firstSection')
-    .addEventListener('pointermove', onPointerMove)
+  document.getElementById('firstSection')
+  // .addEventListener('pointermove', onPointerMove)
 
   //
 
@@ -126,9 +127,9 @@ function animate() {
 }
 
 function render() {
-  camera.position.x += (mouseX - camera.position.x) * 0.05
-  camera.position.y += (-mouseY - camera.position.y) * 0.05
-  camera.lookAt(scene.position)
+  // camera.position.x += (mouseX - camera.position.x) * 0.05
+  // camera.position.y += (-mouseY - camera.position.y) * 0.05
+  // camera.lookAt(scene.position)
 
   const positions = particles.geometry.attributes.position.array
   const scales = particles.geometry.attributes.scale.array
