@@ -27,7 +27,7 @@ function init() {
     1,
     10000
   )
-  camera.position.z = 1000
+  // camera.position.z = 1000
 
   scene = new THREE.Scene()
 
@@ -77,6 +77,11 @@ function init() {
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(window.innerWidth, window.innerHeight)
   container.appendChild(renderer.domElement)
+
+  const controls = new THREE.OrbitControls(camera, renderer.domElement)
+
+  camera.position.set(0, 20, 20)
+  controls.update()
 
   stats = new Stats()
   container.appendChild(stats.dom)
