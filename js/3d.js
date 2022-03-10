@@ -95,9 +95,6 @@ function init() {
   camera.position.set(500, 440, 1000)
   controls.update()
 
-  stats = new Stats()
-  container.appendChild(stats.dom)
-
   container.style.touchAction = 'none'
   // container.addEventListener('pointermove', onPointerMove)
   document
