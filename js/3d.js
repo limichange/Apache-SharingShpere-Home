@@ -27,9 +27,6 @@ function init() {
     1,
     10000
   )
-  camera.position.z = 2000
-  camera.position.x = 2000
-  camera.position.y = 2000
 
   scene = new THREE.Scene()
 
@@ -56,9 +53,21 @@ function init() {
     }
   }
 
+  const colors = []
+  const color = new THREE.Color()
+
+  for (let i = 0, l = positions.length; i < l; i++) {
+    color.setHSL(26, i / l, 1)
+    color.toArray(colors, i * 3)
+  }
+
   const geometry = new THREE.BufferGeometry()
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
   geometry.setAttribute('scale', new THREE.BufferAttribute(scales, 1))
+  geometry.setAttribute(
+    'customColor',
+    new THREE.Float32BufferAttribute(colors, 3)
+  )
 
   const material = new THREE.ShaderMaterial({
     uniforms: {
@@ -69,6 +78,7 @@ function init() {
   })
 
   //
+  // console.log(material)
 
   particles = new THREE.Points(geometry, material)
   scene.add(particles)
@@ -82,16 +92,17 @@ function init() {
 
   const controls = new THREE.OrbitControls(camera, renderer.domElement)
 
-  // camera.position.set(0, 20, 20)
-  // controls.update()
+  camera.position.set(500, 440, 1000)
+  controls.update()
 
   stats = new Stats()
   container.appendChild(stats.dom)
 
   container.style.touchAction = 'none'
   // container.addEventListener('pointermove', onPointerMove)
-  document.getElementById('firstSection')
-  // .addEventListener('pointermove', onPointerMove)
+  document
+    .getElementById('firstSection')
+    .addEventListener('pointermove', onPointerMove)
 
   //
 
@@ -127,7 +138,7 @@ function animate() {
 }
 
 function render() {
-  // camera.position.x += (mouseX - camera.position.x) * 0.05
+  camera.position.x += (mouseX - camera.position.x) * 0.005
   // camera.position.y += (-mouseY - camera.position.y) * 0.05
   // camera.lookAt(scene.position)
 
@@ -151,6 +162,7 @@ function render() {
     }
   }
 
+  particles.geometry.attributes.customColor.needsUpdate = true
   particles.geometry.attributes.position.needsUpdate = true
   particles.geometry.attributes.scale.needsUpdate = true
 
