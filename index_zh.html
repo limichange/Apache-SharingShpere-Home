@@ -43,9 +43,11 @@
     />
     <meta name="twitter:card" value="summary" />
     <meta name="twitter:site" value="@ShardingSphere" />
+    <script src="./js/libs/three-0.138.3.min.js"></script>
     <script src="./js/libs/bodyScrollLock.min.js"></script>
     <script src="./js/libs/jquery-3.6.0.min.js"></script>
-    <script src="./js/libs/lottie-5.8.1.min.js"></script>
+    <script src="./js/libs/stats.js"></script>
+    <script src="./js/libs/OrbitControls.js"></script>
     <link rel="stylesheet" href="./style/font.css" />
     <link rel="stylesheet" href="./style/modern-normalize.css" />
     <link rel="stylesheet" href="./style/base.css" />
@@ -319,7 +321,7 @@
       <!-- first section -->
 
       <section id="firstSection">
-        <div id="lottie"></div>
+        <div id="threejs"></div>
 
         <div class="content">
           <img class="logo" src="./images/base/logo.png" alt="logo" />
@@ -821,7 +823,7 @@
         </div>
 
         <div class="languageSelect item">
-          <span>语言</span>
+          <span>Language</span>
           <div class="arrowIcon"></div>
         </div>
         <div class="langs itemList">
@@ -851,5 +853,37 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/index.js"></script>
+
+    <script type="x-shader/x-vertex" id="vertexshader">
+      attribute float scale;
+      attribute vec3 customColor;
+      varying vec3 vColor;
+
+      void main() {
+
+        vColor = customColor;
+
+      	vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+
+      	gl_PointSize = scale * ( 300.0 / - mvPosition.z );
+
+      	gl_Position = projectionMatrix * mvPosition;
+
+      }
+    </script>
+
+    <script type="x-shader/x-fragment" id="fragmentshader">
+      uniform vec3 color;
+
+      varying vec3 vColor;
+
+      void main() {
+
+      	if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+
+        gl_FragColor = vec4( color * vColor, 1.0 );
+      }
+    </script>
+    <script src="./js/3d.js"></script>
   </body>
 </html>
