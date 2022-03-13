@@ -56,7 +56,10 @@
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
     geometry.setAttribute('scale', new THREE.BufferAttribute(scales, 1))
 
-    scene.fog = new THREE.Fog(0xffffff, 2000, 3000)
+    const near = 2000
+    const far = 3000
+    const color = 0xffffff
+    scene.fog = new THREE.Fog(color, near, far)
 
     const material = new THREE.ShaderMaterial({
       uniforms: {
