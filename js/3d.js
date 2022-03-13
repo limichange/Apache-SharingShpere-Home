@@ -52,28 +52,22 @@
       }
     }
 
-    const colors = []
-    const color = new THREE.Color()
-
-    for (let i = 0, l = positions.length; i < l; i++) {
-      color.setHSL(26, i / l, 1)
-      color.toArray(colors, i * 3)
-    }
-
     const geometry = new THREE.BufferGeometry()
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
     geometry.setAttribute('scale', new THREE.BufferAttribute(scales, 1))
-    geometry.setAttribute(
-      'customColor',
-      new THREE.Float32BufferAttribute(colors, 3)
-    )
+
+    scene.fog = new THREE.Fog(0xffffff, 2000, 3000)
 
     const material = new THREE.ShaderMaterial({
       uniforms: {
-        color: { value: new THREE.Color(0xf6712e) },
+        color: { type: 'c', value: new THREE.Color('#f56e2b') },
+        fogColor: { type: 'c', value: scene.fog.color },
+        fogNear: { type: 'f', value: scene.fog.near },
+        fogFar: { type: 'f', value: scene.fog.far },
       },
       vertexShader: document.getElementById('vertexshader').textContent,
       fragmentShader: document.getElementById('fragmentshader').textContent,
+      fog: true,
     })
 
     particles = new THREE.Points(geometry, material)
@@ -146,7 +140,6 @@
       }
     }
 
-    particles.geometry.attributes.customColor.needsUpdate = true
     particles.geometry.attributes.position.needsUpdate = true
     particles.geometry.attributes.scale.needsUpdate = true
 
