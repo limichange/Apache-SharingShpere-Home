@@ -13,7 +13,7 @@
     background-position: center bottom;
   }
 
-  #threejs{
+  #threejs {
     opacity: 0;
   }
 }
@@ -54,6 +54,8 @@
   font-size: 24px;
   margin-top: 24px;
   margin-bottom: 4px;
+  text-shadow: -1px -1px 3px white, 1px -1px 3px white, -1px 1px 3px white,
+    1px 1px 3px white;
 }
 
 #firstSection .content .subtitle {
@@ -63,7 +65,8 @@
   max-width: 720px;
   /* Gray 800 */
   color: #393c4e;
-  background: #fff;
+  text-shadow: -1px -1px 3px white, 1px -1px 3px white, -1px 1px 3px white,
+    1px 1px 3px white;
 }
 
 @media (max-width: 640px) {
