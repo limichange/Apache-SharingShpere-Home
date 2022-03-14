@@ -118,11 +118,11 @@
   }
 
   function animate() {
+    requestAnimationFrame(animate)
+
     if (isMobile) {
       return
     }
-
-    requestAnimationFrame(animate)
 
     render()
   }
