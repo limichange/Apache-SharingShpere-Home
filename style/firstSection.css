@@ -5,6 +5,19 @@
   overflow: hidden;
 }
 
+@media (max-width: 640px) {
+  #firstSection {
+    background-image: url('/images/firstSection/heroBgMobile.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  #threejs{
+    opacity: 0;
+  }
+}
+
 #firstSection .logo {
   width: 88px;
   height: 88px;
@@ -23,6 +36,12 @@
   right: 0;
   bottom: 0;
   padding: 180px 0 80px 0;
+}
+
+@media (max-width: 640px) {
+  #firstSection .content {
+    width: 100%;
+  }
 }
 
 #firstSection .content .title {
@@ -45,6 +64,12 @@
   /* Gray 800 */
   color: #393c4e;
   background: #fff;
+}
+
+@media (max-width: 640px) {
+  #firstSection .content .subtitle {
+    background: transparent;
+  }
 }
 
 #firstSection .buttons {

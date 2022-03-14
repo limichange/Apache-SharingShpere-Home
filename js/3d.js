@@ -1,4 +1,5 @@
 ;(function () {
+  let isMobile = window.innerWidth < 640
   const SEPARATION = 100,
     AMOUNTX = 50,
     AMOUNTY = 50
@@ -56,8 +57,8 @@
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
     geometry.setAttribute('scale', new THREE.BufferAttribute(scales, 1))
 
-    const near = 2000
-    const far = 3000
+    const near = 1250
+    const far = 2500
     const color = 0xffffff
     scene.fog = new THREE.Fog(color, near, far)
 
@@ -83,7 +84,7 @@
 
     const controls = new THREE.OrbitControls(camera, renderer.domElement)
 
-    camera.position.set(500, 440, 1000)
+    camera.position.set(800, 640, 1200)
     controls.update()
 
     container.style.touchAction = 'none'
@@ -101,6 +102,8 @@
     windowHalfX = window.innerWidth / 2
     windowHalfY = window.innerHeight / 2
 
+    isMobile = window.innerWidth < 640
+
     camera.aspect = window.innerWidth / window.innerHeight
     camera.updateProjectionMatrix()
 
@@ -115,6 +118,10 @@
   }
 
   function animate() {
+    if (isMobile) {
+      return
+    }
+
     requestAnimationFrame(animate)
 
     render()
