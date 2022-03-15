@@ -15,7 +15,10 @@
   #coreValue .content .list .card .description,
   #roadmapSection .maintitle,
   #roadmapSection .card .title,
-  #roadmapSection .card .content {
+  #roadmapSection .card .content,
+  .mobileMenuList a,
+  .mobileMenuList .languageSelect,
+  .mobileMenuList .item {
     color: #fff;
   }
 
@@ -66,5 +69,15 @@
       #000 31.44%,
       rgba(255, 255, 255, 0) 100%
     );
+  }
+
+  .navigation .iconMenu,
+  .mobileMenu .x,
+  .mobileMenu .arrowIcon {
+    filter: contrast(0);
+  }
+
+  .mobileMenu {
+    background: #000;
   }
 }
