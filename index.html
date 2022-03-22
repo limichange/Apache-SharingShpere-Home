@@ -43,11 +43,8 @@
     />
     <meta name="twitter:card" value="summary" />
     <meta name="twitter:site" value="@ShardingSphere" />
-    <script src="./js/libs/three-0.138.3.min.js"></script>
     <script src="./js/libs/bodyScrollLock.min.js"></script>
     <script src="./js/libs/jquery-3.6.0.min.js"></script>
-    <script src="./js/libs/stats.js"></script>
-    <script src="./js/libs/OrbitControls.js"></script>
     <link rel="stylesheet" href="./style/font.css" />
     <link rel="stylesheet" href="./style/modern-normalize.css" />
     <link rel="stylesheet" href="./style/base.css" />
@@ -317,8 +314,6 @@
       <!-- first section -->
 
       <section id="firstSection">
-        <div id="threejs"></div>
-
         <div class="content">
           <img
             class="logo"
@@ -845,44 +840,5 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/index.js"></script>
-
-    <script type="x-shader/x-vertex" id="vertexshader">
-      attribute float scale;
-
-      void main() {
-      	vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-
-      	gl_PointSize = scale * ( 300.0 / - mvPosition.z );
-
-      	gl_Position = projectionMatrix * mvPosition;
-
-      }
-    </script>
-
-    <script type="x-shader/x-fragment" id="fragmentshader">
-      uniform vec3 color;
-
-      uniform vec3 fogColor;
-      uniform float fogNear;
-      uniform float fogFar;
-
-      void main() {
-
-      	if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
-
-        gl_FragColor = vec4( color, 1 );
-
-        #ifdef USE_FOG
-            #ifdef USE_LOGDEPTHBUF_EXT
-                float depth = gl_FragDepthEXT / gl_FragCoord.w;
-            #else
-                float depth = gl_FragCoord.z / gl_FragCoord.w;
-            #endif
-            float fogFactor = smoothstep( fogNear, fogFar, depth );
-            gl_FragColor.rgb = mix( gl_FragColor.rgb, fogColor, fogFactor );
-        #endif
-      }
-    </script>
-    <script src="./js/3d.js"></script>
   </body>
 </html>
