@@ -1,0 +1,16 @@
+@media (min-width: 1124px) {
+  #coreValue .detailContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #coreValue .content .list {
+    margin-left: 40px;
+  }
+
+  #coreValue .detailContent .image {
+    width: 400px;
+    height: 407px;
+  }
+}

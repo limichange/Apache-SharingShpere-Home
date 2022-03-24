@@ -32,15 +32,24 @@ footer .logos img {
 
 /* communityList */
 footer .communityList {
-  margin-top: 68px;
   display: flex;
   width: 400px;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
 }
 
 footer .communityList .item {
   display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+footer .communitySubList {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -67,6 +76,7 @@ footer .communityList a:hover {
 
 .footerNavigation {
   display: flex;
+  flex-direction: column;
 }
 
 .footerNavigation > .item {

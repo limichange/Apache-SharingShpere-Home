@@ -1,3 +1,19 @@
+@media (min-width: 740px) {
+  .footerNavigation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .communityList {
+    margin-top: 48px;
+    flex-direction: row;
+  }
+
+  footer .communitySubList {
+    display: block;
+  }
+}
+
 @media (min-width: 1124px) {
   footer .content {
     flex-direction: row;

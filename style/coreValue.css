@@ -34,15 +34,16 @@
 #coreValue .detailContent {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 #coreValue .detailContent .image {
-  width: 400px;
-  height: 407px;
+  width: 240px;
+  height: 244px;
+  margin: 0 auto;
 }
 
 #coreValue .content .list {
-  margin-left: 40px;
   display: flex;
   gap: 40px;
 }
