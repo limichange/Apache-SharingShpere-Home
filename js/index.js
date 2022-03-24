@@ -1,15 +1,6 @@
 //
 // First Section
 //
-// let animation = lottie.loadAnimation({
-//   container: document.getElementById('lottie'),
-//   path: './lottiefiles/hero.json',
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-// })
-
-// animation.setSubframe(false)
 
 $(document).ready(function () {
   $('.roadmapSlick').slick({
@@ -56,8 +47,10 @@ $(document).ready(function () {
 
       if (nextSlide > rightEndIndex) {
         $('.slick-next.slick-arrow').hide()
+        $('.shadow.right').hide()
       } else {
         $('.slick-next.slick-arrow').show()
+        $('.shadow.right').show()
       }
     }
   )
