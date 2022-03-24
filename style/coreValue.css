@@ -136,31 +136,4 @@
     margin-bottom: 32px;
     margin-left: 32px;
   }
-
-  #coreValue .icon1 {
-    position: absolute;
-    right: 0;
-    top: -20px;
-    width: 231px;
-    height: 122px;
-    background-image: url('/images/coreValue/icon1.svg');
-  }
-
-  #coreValue .icon2 {
-    position: absolute;
-    left: 0;
-    bottom: -20px;
-    width: 231px;
-    height: 122px;
-    background-image: url('/images/coreValue/icon2.svg');
-  }
-
-  #coreValue .icon3 {
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    width: 158px;
-    height: 48px;
-    background-image: url('/images/coreValue/icon3.svg');
-  }
 }
