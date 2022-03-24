@@ -8,6 +8,8 @@ $(document).ready(function () {
     speed: 300,
     variableWidth: true,
     draggable: false,
+    arrows: true,
+
     responsive: [
       {
         breakpoint: 868,
@@ -16,6 +18,7 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           draggable: true,
+          arrows: false,
         },
       },
     ],
@@ -76,4 +79,6 @@ $(document).ready(function () {
     $('.mobileMenu').hide()
     bodyScrollLock.enableBodyScroll(document.querySelector('.mobileMenu'))
   })
+
+  $('.footerNavigation .links').hide()
 })

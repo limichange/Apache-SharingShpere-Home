@@ -64,7 +64,7 @@
   width: 206px;
 }
 
-#roadmapSection .cardItem:nth-child(2) .point::before {
+#roadmapSection .cardItem:first-child .point::before {
   height: 2px;
   background-color: #f6712e;
   content: ' ';
@@ -166,10 +166,4 @@
     #ffffff 31.44%,
     rgba(255, 255, 255, 0) 100%
   );
-}
-
-#roadmapSection .shadow,
-.slick-prev,
-.slick-next {
-  display: none !important;
 }
