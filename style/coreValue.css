@@ -36,20 +36,29 @@
   flex-direction: column;
 }
 
-#coreValue .detailContent .image {
+#coreValue .image {
   width: 240px;
   height: 244px;
   margin: 0 auto;
 }
 
+#coreValue .logo1.image {
+  margin-top: 30px;
+  display: block;
+}
+
+#coreValue .logo2.image {
+  display: none;
+}
+
 #coreValue .content .list .card {
   width: 100%;
+  margin-top: 6px;
   margin-bottom: 24px;
 }
 
 #coreValue .content .list .text {
   padding-top: 6px;
-  margin-left: 8px;
 }
 
 #coreValue .content .list .card .icon {
@@ -73,4 +82,5 @@
   font-size: 14px;
   line-height: 20px;
   opacity: 0.8;
+  margin-top: 6px;
 }

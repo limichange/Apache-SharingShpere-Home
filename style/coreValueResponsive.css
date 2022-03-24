@@ -11,13 +11,18 @@
     line-height: 40px;
   }
 
-  #coreValue .detailContent .image {
+  #coreValue .image {
     width: 400px;
     height: 407px;
   }
 
   #coreValue .content .list .card {
     display: flex;
+  }
+
+  #coreValue .content .list .text {
+    padding-top: 6px;
+    margin-left: 8px;
   }
 
   #coreValue .content .list .card .icon {
@@ -42,6 +47,14 @@
     display: flex;
     gap: 40px;
     margin-left: 40px;
+  }
+
+  #coreValue .logo1.image {
+    display: none;
+  }
+
+  #coreValue .logo2.image {
+    display: block;
   }
 
   #coreValue .detailContent {
