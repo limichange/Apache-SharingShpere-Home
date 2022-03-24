@@ -1,11 +1,18 @@
 @media (max-width: 868px) {
+  #roadmapSection {
+    background-image: url('/images/roadmap/mobileBackground.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   #roadmapSection .maintitle {
     font-family: 'Styrene A Web', sans-serif;
     text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    /* Gray 900 */
     color: #080b22;
   }
 
