@@ -1,10 +1,19 @@
-@media (max-width: 868px) {
+@media (min-width: 868px) {
   #roadmapSection {
-    background-image: url('/images/roadmap/mobileBackground.svg');
+    background-image: url('/images/roadmap/background.svg');
     background-repeat: no-repeat;
     background-position: right top;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  #roadmapSection .cardItem:first-child {
+    width: 240px;
+    padding-left: 20px;
+  }
+
+  #roadmapSection .cardItem:first-child .point {
+    margin-left: -1px;
   }
 
   #roadmapSection .maintitle {
@@ -12,30 +21,21 @@
     text-align: center;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 32px;
     color: #080b22;
+    margin: 0 0 40px;
   }
 
   #roadmapSection .container {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 120px;
+    padding: 0;
   }
 
   #roadmapSection .shadow,
   .slick-prev,
   .slick-next {
-    display: none !important;
-  }
-
-  #roadmapSection .cardItem:nth-child(2) .point::before {
-    /* Orange 2 */
-    height: 2px;
-    background-color: #f6712e;
-    content: ' ';
-    position: absolute;
-    right: 28px;
-    top: 8px;
-    width: 500px;
+    display: block !important;
   }
 }
 
