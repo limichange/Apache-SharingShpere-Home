@@ -1,0 +1,41 @@
+@media (max-width: 640px) {
+  #firstSection {
+    /* todo */
+    /* background-image: url('/images/firstSection/heroBgMobile.jpg'); */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+
+@media (min-width: 868px) {
+  #firstSection {
+    height: 80vh;
+    min-height: 860px;
+  }
+
+  #firstSection .logo {
+    width: 420px;
+    height: 300px;
+  }
+
+  #firstSection .content .title {
+    font-size: 48px;
+  }
+
+  #firstSection .content {
+    padding: 0;
+  }
+
+  #lottie {
+    transform: scale(1.5);
+  }
+
+  #firstSection .buttons {
+    flex-direction: row;
+  }
+
+  #firstSection .buttons button {
+    width: 180px;
+  }
+}
