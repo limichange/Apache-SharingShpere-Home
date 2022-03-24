@@ -120,7 +120,7 @@
 
   #coreValue .content {
     flex-direction: row;
-    padding: 0 80px;
+    /* padding: 0 80px; */
   }
 
   #coreValue .content .main {

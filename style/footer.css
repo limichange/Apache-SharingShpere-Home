@@ -1,8 +1,7 @@
 footer {
   width: 100%;
-  padding: 40px 0;
-  /* Gray 300 */
-  background: #f7f7fb;
+  padding: 64px 0;
+  background: #29292c;
 }
 
 footer .content {
@@ -12,29 +11,90 @@ footer .content {
   flex-direction: column;
 }
 
+/* left */
 footer .text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 13px;
   line-height: 20px;
-  display: block;
-  /* Gray 600 */
   color: #9c9da7;
+  max-width: 400px;
+  display: block;
+  margin-top: 40px;
 }
 
 footer .logos img {
-  margin-top: 32px;
-  margin-bottom: 32px;
   margin-right: 24px;
-  height: 72px;
+  height: 48px;
   width: auto;
 }
 
-@media (min-width: 1124px) {
-  footer .content {
-    flex-direction: row;
-    align-items: center;
-  }
+/* communityList */
+footer .communityList {
+  margin-top: 68px;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  footer .text {
-    max-width: 600px;
-  }
+footer .communityList .item {
+  display: flex;
+  align-items: center;
+}
+
+footer .communityList img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+footer .communityList a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #9c9da7;
+}
+
+/* right */
+
+.footerNavigation {
+  display: flex;
+}
+
+.footerNavigation > .item {
+  width: 120px;
+}
+
+.footerNavigation > .item:last-child {
+  width: auto;
+}
+
+.footerNavigation a:hover {
+  opacity: 0.8;
+}
+
+.footerNavigation > .item > span,
+.footerNavigation > .item > a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9c9da7;
+}
+
+.footerNavigation .links a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f3f4f6;
+
+  margin-top: 16px;
+  display: block;
 }
