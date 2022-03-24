@@ -1,16 +1,55 @@
-@media (min-width: 1124px) {
-  #coreValue .detailContent {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+@media (min-width: 868px) {
+  #coreValue .content h1 {
+    font-size: 40px;
+    line-height: 56px;
+    margin-top: 64px;
+    text-align: center;
   }
 
-  #coreValue .content .list {
-    margin-left: 40px;
+  #coreValue .content .main p {
+    font-size: 20px;
+    line-height: 40px;
   }
 
   #coreValue .detailContent .image {
     width: 400px;
     height: 407px;
   }
+
+  #coreValue .content .list .card {
+    display: flex;
+  }
+
+  #coreValue .content .list .card .icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  #coreValue .content .list .card .title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 12px;
+  }
+
+  #coreValue .content .list .card .description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1124px) {
+  #coreValue .content .list {
+    display: flex;
+    gap: 40px;
+    margin-left: 40px;
+  }
+
+  #coreValue .detailContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1380px) {
 }
