@@ -8,10 +8,15 @@ footer .content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 /* left */
+footer .logosAndCommunityList {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 footer .text {
   font-family: 'Inter';
   font-style: normal;
@@ -33,7 +38,7 @@ footer .logos img {
 /* communityList */
 footer .communityList {
   display: flex;
-  width: 400px;
+  max-width: 400px;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
@@ -80,7 +85,8 @@ footer .communityList a:hover {
 }
 
 .footerNavigation > .item {
-  width: 120px;
+  width: 110px;
+  margin-bottom: 32px;
 }
 
 .footerNavigation > .item:last-child {

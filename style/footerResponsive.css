@@ -1,9 +1,4 @@
-@media (min-width: 820px) {
-  .footerNavigation {
-    display: flex;
-    flex-direction: row;
-  }
-
+@media (min-width: 740px) {
   footer .communityList {
     margin-top: 48px;
     flex-direction: row;
@@ -12,15 +7,29 @@
   footer .communitySubList {
     display: block;
   }
+
+  .footerNavigation {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 868px) {
+  .footerNavigation > .item {
+    width: 120px;
+  }
 }
 
 @media (min-width: 1124px) {
   footer .content {
     flex-direction: row;
-    align-items: center;
   }
 
   footer .text {
     max-width: 400px;
+  }
+
+  footer .logosAndCommunityList {
+    flex-direction: column;
   }
 }

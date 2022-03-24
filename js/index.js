@@ -80,5 +80,26 @@ $(document).ready(function () {
     bodyScrollLock.enableBodyScroll(document.querySelector('.mobileMenu'))
   })
 
-  $('.footerNavigation .links').hide()
+  function checkFooterSize() {
+    var windowWidth = $(window).width()
+
+    if (windowWidth < 740) {
+      $('.footerNavigation .links').hide()
+    } else {
+      $('.footerNavigation .links').show()
+    }
+  }
+
+  checkFooterSize()
+
+  // window resize hide links
+  $(window).resize(function () {
+    checkFooterSize()
+  })
+
+  $('.footerNavigation .item').click(function () {
+    // this item
+    var item = $(this)
+    item.find('.links').slideToggle()
+  })
 })
