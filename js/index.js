@@ -98,6 +98,12 @@ $(document).ready(function () {
   })
 
   $('.footerNavigation .item').click(function () {
+    var windowWidth = $(window).width()
+
+    if (windowWidth >= 740) {
+      return
+    }
+
     // this item
     var item = $(this)
     item.find('.links').slideToggle()
