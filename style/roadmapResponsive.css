@@ -1,0 +1,41 @@
+@media (max-width: 868px) {
+  #roadmapSection .maintitle {
+    font-family: 'Styrene A Web', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    /* Gray 900 */
+    color: #080b22;
+  }
+
+  #roadmapSection .container {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  #roadmapSection .shadow,
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+  #roadmapSection .cardItem:nth-child(2) .point::before {
+    /* Orange 2 */
+    height: 2px;
+    background-color: #f6712e;
+    content: ' ';
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 1980px) {
+  #roadmapSection .shadow,
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
