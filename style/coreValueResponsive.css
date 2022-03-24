@@ -16,12 +16,7 @@
     height: 407px;
   }
 
-  #coreValue .content .list .card {
-    display: flex;
-  }
-
   #coreValue .content .list .text {
-    padding-top: 6px;
     margin-left: 8px;
   }
 
