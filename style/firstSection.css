@@ -22,6 +22,7 @@
 #firstSection .logo {
   width: 420px;
   height: 300px;
+  margin-right: 100px;
 }
 
 #firstSection .container {
@@ -45,7 +46,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
-  line-height: 80px;
   color: #080b22;
   margin: 0;
 }
@@ -55,7 +55,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 40px;
   color: #080b22;
   margin: 0;
 }
@@ -73,8 +72,28 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 #firstSection .buttons button {
-  width: 240px;
+  width: 220px;
+  margin-right: 24px;
+  box-shadow: 6px 6px 30px 2px rgba(255, 85, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#firstSection .learnMoreButton {
+  border-color: transparent;
+  background-color: transparent;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ff5c00;
+}
+
+#firstSection button:hover {
+  box-shadow: 6px 6px 30px 8px rgba(255, 85, 0, 0.2);
 }
