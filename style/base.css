@@ -5,7 +5,6 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 @media (min-width: 740px) {
@@ -98,4 +97,8 @@ button.outline:active {
 
 .colorOrange700 {
   color: #fe8244;
+}
+
+.colorOrange800 {
+  color: #f6712e;
 }

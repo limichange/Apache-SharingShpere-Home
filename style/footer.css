@@ -59,6 +59,10 @@ footer .communityList a {
   color: #9c9da7;
 }
 
+footer .communityList a:hover {
+  color: #c5c5cc;
+}
+
 /* right */
 
 .footerNavigation {

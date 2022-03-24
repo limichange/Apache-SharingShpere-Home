@@ -1,8 +1,10 @@
 #coreValue {
   width: 100%;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
   margin-bottom: 20px;
+  color: white;
+  background: #29292c;
 }
 
 #coreValue .content {
@@ -12,71 +14,48 @@
   align-items: center;
 }
 
-#coreValue .content .main h1 {
-  /* EN/Heading 2 */
-  font-family: 'Styrene A Web', sans-serif;
+#coreValue .content h1 {
   font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  /* Gray 800 */
-  color: #393c4e;
-  max-width: 400px;
-  margin: 16px 0;
-}
-
-#coreValue .content .main .titleDescription {
-  font-family: 'Styrene A Web', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  /* Orange 700 */
-  color: #fe8244;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 64px;
 }
 
 #coreValue .content .main p {
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
 }
 
-#coreValue .content .list .card {
-  /* Gray 300 */
-  background: #f7f7fb;
-  border-radius: 12px;
-  padding: 24px;
-  width: 100%;
-  margin-bottom: 24px;
+#coreValue .detailContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+#coreValue .detailContent .image {
+  width: 400px;
+  height: 407px;
 }
 
 #coreValue .content .list {
-  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  gap: 40px;
 }
 
-@media (min-width: 1124px) {
-  #coreValue .content .main p {
-    font-size: 18px;
-    line-height: 32px;
-  }
+#coreValue .content .list .card {
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+}
 
-  #coreValue .content .list {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #coreValue .content .list .listRight {
-    margin-top: 80px;
-  }
-
-  #coreValue .content .list .card {
-    padding: 24px;
-    width: 240px;
-  }
+#coreValue .content .list .text {
+  padding-top: 6px;
+  margin-left: 8px;
 }
 
 #coreValue .content .list .card .icon {
@@ -87,11 +66,9 @@
 
 #coreValue .content .list .card .title {
   font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
   line-height: 32px;
-  /* Gray 900 */
-  color: #080b22;
   margin-top: 12px;
   display: block;
 }
@@ -101,39 +78,5 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  /* Gray 900 */
-  color: #080b22;
   opacity: 0.8;
-}
-
-@media (min-width: 1124px) {
-  #coreValue {
-    margin-bottom: 40px;
-  }
-
-  #coreValue .content .main h1 {
-    font-size: 40px;
-    line-height: 56px;
-    max-width: 400px;
-    margin: 16px 0;
-  }
-
-  #coreValue .content {
-    flex-direction: row;
-    /* padding: 0 80px; */
-  }
-
-  #coreValue .content .main {
-    width: 50%;
-  }
-
-  #coreValue .content .list {
-    margin-top: 60px;
-    justify-content: space-between;
-  }
-
-  #coreValue .content .list .card {
-    margin-bottom: 32px;
-    margin-left: 32px;
-  }
 }
