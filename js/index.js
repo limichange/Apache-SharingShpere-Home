@@ -44,9 +44,13 @@ $(document).ready(function () {
       // get window width
       var windowWidth = $(window).width()
 
-      if (windowWidth > 1368) {
-        rightEndIndex = 2
+      if (windowWidth > 1900) {
+        rightEndIndex = 0
+      } else if (windowWidth > 1368) {
+        rightEndIndex = 1
       } else if (windowWidth > 1068) {
+        rightEndIndex = 2
+      } else if (windowWidth > 868) {
         rightEndIndex = 3
       }
 

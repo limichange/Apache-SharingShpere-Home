@@ -64,11 +64,11 @@
 }
 
 .slick-prev {
-  left: -25px;
+  left: 25px;
   background-image: url('/images/roadmap/arrow2.svg');
 }
 [dir='rtl'] .slick-prev {
-  right: -25px;
+  right: 25px;
   left: auto;
 }
 .slick-prev:before {
@@ -79,12 +79,12 @@
 }
 
 .slick-next {
-  right: -25px;
+  right: 25px;
   background-image: url('/images/roadmap/arrow.svg');
 }
 [dir='rtl'] .slick-next {
   right: auto;
-  left: -25px;
+  left: 25px;
 }
 .slick-next:before {
   content: ' ';
