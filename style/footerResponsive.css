@@ -15,12 +15,13 @@
 }
 
 @media (min-width: 868px) {
-  .footerNavigation > .item {
-    width: 120px;
-  }
 }
 
 @media (min-width: 1124px) {
+  .footerNavigation > .item {
+    width: 128px;
+  }
+
   footer .content {
     flex-direction: row;
   }
@@ -31,5 +32,17 @@
 
   footer .logosAndCommunityList {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1380px) {
+  .footerNavigation > .item {
+    width: 138px;
+  }
+}
+
+@media (min-width: 1636px) {
+  .footerNavigation > .item {
+    width: 158px;
   }
 }
