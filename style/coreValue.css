@@ -70,11 +70,12 @@
 }
 
 #coreValue .content .list .card .title {
+  font-family: 'Styrene A Web', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 12px;
+  margin-top: 10px;
   display: block;
 }
 

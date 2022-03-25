@@ -12,8 +12,8 @@
   }
 
   #coreValue .image {
-    width: 400px;
-    height: 407px;
+    width: 380px;
+    height: 387px;
   }
 
   #coreValue .content .list .text {
@@ -26,7 +26,7 @@
   }
 
   #coreValue .content .list .card .title {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
     margin-top: 12px;
   }
@@ -41,6 +41,11 @@
   #coreValue .content .list {
     display: flex;
     gap: 40px;
+  }
+}
+
+@media (min-width: 1380px) {
+  #coreValue .content .list {
     margin-left: 40px;
   }
 
