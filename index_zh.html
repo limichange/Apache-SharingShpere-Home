@@ -43,21 +43,21 @@
     />
     <meta name="twitter:card" value="summary" />
     <meta name="twitter:site" value="@ShardingSphere" />
-    <script src="./js/libs/three-0.138.3.min.js"></script>
     <script src="./js/libs/bodyScrollLock.min.js"></script>
     <script src="./js/libs/jquery-3.6.0.min.js"></script>
-    <script src="./js/libs/stats.js"></script>
-    <script src="./js/libs/OrbitControls.js"></script>
     <link rel="stylesheet" href="./style/font.css" />
     <link rel="stylesheet" href="./style/modern-normalize.css" />
     <link rel="stylesheet" href="./style/base.css" />
     <link rel="stylesheet" href="./style/index.css" />
     <link rel="stylesheet" href="./style/firstSection.css" />
-    <link rel="stylesheet" href="./style/roadmapSection.css" />
+    <link rel="stylesheet" href="./style/firstSectionResponsive.css" />
+    <link rel="stylesheet" href="./style/roadmap.css" />
+    <link rel="stylesheet" href="./style/roadmapResponsive.css" />
     <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/footerResponsive.css" />
     <link rel="stylesheet" href="./style/navigation.css" />
-    <!-- <link rel="stylesheet" href="./style/quote.css" /> -->
     <link rel="stylesheet" href="./style/coreValue.css" />
+    <link rel="stylesheet" href="./style/coreValueResponsive.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -322,29 +322,39 @@
       <!-- first section -->
 
       <section id="firstSection">
-        <div id="threejs"></div>
+        <div class="topShadow"></div>
 
-        <div class="content">
-          <img class="logo" src="./images/base/logo.png" alt="logo" />
-          <h1 class="title">Apache ShardingSphere</h1>
-          <div class="subtitle">
-            Apache ShardingSphere
-            是一套开源的分布式数据库增强计算引擎，其通过可插拔架构构建基于数据库之上的生态系统，实现包括数据分片、弹性扩展、加密脱模等功为代表的增强能力。
-          </div>
+        <div class="container">
+          <div class="content">
+            <img
+              class="logo"
+              src="./images/firstSection/shardingSphereLogo.png"
+              alt="logo"
+            />
 
-          <div class="buttons">
-            <a
-              href="https://shardingsphere.apache.org/document/current/en/downloads/"
-            >
-              <button class="primary">下载产品</button>
-            </a>
-            <a href="https://shardingsphere.apache.org/document/current/en/">
-              <button class="outline">了解更多</button>
-            </a>
+            <div class="leftContent">
+              <h1>Database Plus</h1>
+              <h2>什么是 Apache ShardingSphere?</h2>
+              <p class="subtitle">
+                Apache ShardingSphere
+                是一套开源的分布式数据库增强计算引擎，其通过可插拔架构构建基于数据库之上的生态系统，实现包括数据分片、弹性扩展、加密脱模等功为代表的增强能力。
+              </p>
+
+              <div class="buttons">
+                <a
+                  href="https://shardingsphere.apache.org/document/current/en/downloads/"
+                >
+                  <button class="primary">下载产品</button>
+                </a>
+                <a
+                  href="https://shardingsphere.apache.org/document/current/en/"
+                >
+                  <button class="learnMoreButton">了解更多</button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="shadow"></div>
       </section>
 
       <!-- core value -->
@@ -854,44 +864,5 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/index.js"></script>
-
-    <script type="x-shader/x-vertex" id="vertexshader">
-      attribute float scale;
-
-      void main() {
-      	vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-
-      	gl_PointSize = scale * ( 300.0 / - mvPosition.z );
-
-      	gl_Position = projectionMatrix * mvPosition;
-
-      }
-    </script>
-
-    <script type="x-shader/x-fragment" id="fragmentshader">
-      uniform vec3 color;
-
-      uniform vec3 fogColor;
-      uniform float fogNear;
-      uniform float fogFar;
-
-      void main() {
-
-      	if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
-
-        gl_FragColor = vec4( color, 1 );
-
-        #ifdef USE_FOG
-            #ifdef USE_LOGDEPTHBUF_EXT
-                float depth = gl_FragDepthEXT / gl_FragCoord.w;
-            #else
-                float depth = gl_FragCoord.z / gl_FragCoord.w;
-            #endif
-            float fogFactor = smoothstep( fogNear, fogFar, depth );
-            gl_FragColor.rgb = mix( gl_FragColor.rgb, fogColor, fogFactor );
-        #endif
-      }
-    </script>
-    <script src="./js/3d.js"></script>
   </body>
 </html>
