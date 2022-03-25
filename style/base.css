@@ -105,3 +105,7 @@ button.outline:active {
 .colorOrange800 {
   color: #f6712e;
 }
+
+.textBold {
+  font-weight: bold !important;
+}
