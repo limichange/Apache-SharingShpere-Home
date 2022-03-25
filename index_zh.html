@@ -510,36 +510,12 @@
         <div class="icon3"></div>
       </section>
 
-      <!-- quote -->
-
-      <!-- <section id="quoteSection">
-        <div class="container">
-          <div class="card">
-            <div class="textWrap">
-              <div class="text">
-                Apache ShardingSphere
-                是一套开源的分布式数据库解决方案组成的生态圈，它由 JDBC、Proxy
-                和 Sidecar（规划中）这 3
-                款既能够独立部署，又支持混合部署配合使用的产品组成。
-              </div>
-            </div>
-
-            <div class="mobileIcon1"></div>
-            <div class="mobileIcon2"></div>
-            <div class="mobileIcon3"></div>
-            <div class="icon1"></div>
-            <div class="icon2"></div>
-            <div class="icon3"></div>
-          </div>
-        </div>
-      </section> -->
-
       <!-- roadmap -->
 
       <section id="roadmapSection">
         <h1 class="maintitle">版本演进</h1>
 
-        <div class="container">
+        <div class="roadmapSectionContainer">
           <div class="roadmapSlick">
             <div class="cardItem">
               <div class="card">
@@ -639,27 +615,296 @@
     <!-- footer -->
     <footer>
       <div class="container content">
-        <div class="logos">
-          <a href="https://www.apache.org/foundation/contributing.html">
-            <img
-              src="./images/base/support-apache.png"
-              alt="Apache Support Logo"
-            />
-          </a>
-          <a href="https://www.apache.org/">
-            <img
-              src="./images/base/asf_logo.svg"
-              alt="The Apache Software Foundation"
-            />
-          </a>
+        <div class="logosAndCommunityList">
+          <div>
+            <div class="logos">
+              <a href="https://www.apache.org/foundation/contributing.html">
+                <img
+                  src="./images/base/support-apache.png"
+                  alt="Apache Support Logo"
+                />
+              </a>
+              <a href="https://www.apache.org/">
+                <img
+                  src="./images/base/asf_logo.svg"
+                  alt="The Apache Software Foundation"
+                />
+              </a>
+            </div>
+
+            <span class="text">
+              Copyright © 2018-2022, Apache ShardingSphere, ShardingSphere,
+              Apache, the Apache feather logo, and the Apache ShardingSphere
+              project logo are either registered trademarks or trademarks of The
+              Apache Software Foundation in the United States and other
+              countries.
+            </span>
+          </div>
+
+          <div class="communityList">
+            <div class="communitySubList">
+              <a href="https://github.com/apache/shardingsphere" class="item">
+                <img src="/images/footer/github.png" alt="github" />
+                <span>Github</span>
+              </a>
+              <a href="https://twitter.com/ShardingSphere" class="item">
+                <img src="/images/footer/twitter.png" alt="twitter" />
+                <span>Twitter</span>
+              </a>
+            </div>
+
+            <div class="communitySubList">
+              <a
+                href="https://apacheshardingsphere.slack.com/messages/C026MLH7F34"
+                class="item"
+              >
+                <img src="/images/footer/slack.png" alt="slack" />
+                <span>Slack</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/showcase/apache-shardingsphere"
+                class="item"
+              >
+                <img src="/images/footer/linkedIn.png" alt="linkedIn" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+            <div class="communitySubList">
+              <a href="https://medium.com/@shardingsphere" class="item">
+                <img src="/images/footer/medium.png" alt="medium" />
+                <span>Medium</span>
+              </a>
+              <a
+                href="https://www.reddit.com/r/Apache_ShardingSphere/"
+                class="item"
+              >
+                <img src="/images/footer/reddit.png" alt="reddit" />
+                <span>Reddit</span>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <span class="text">
-          Copyright © 2018-2022, Apache ShardingSphere, ShardingSphere, Apache,
-          the Apache feather logo, and the Apache ShardingSphere project logo
-          are either registered trademarks or trademarks of The Apache Software
-          Foundation in the United States and other countries.
-        </span>
+        <div class="footerNavigation">
+          <div class="item">
+            <a
+              href="https://shardingsphere.apache.org/document/current/cn/downloads/"
+              target="_blank"
+              >产品下载</a
+            >
+          </div>
+
+          <div class="item">
+            <span>文档</span>
+
+            <div class="links">
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/document/current/cn/overview"
+                  target="_blank"
+                  >master</a
+                >
+              </div>
+              <div class="item">
+                <a href="/document/5.1.0/en/overview" target="_blank">5.1.0</a>
+              </div>
+              <div class="item">
+                <a href="/document/5.0.0/en/overview" target="_blank">5.0.0</a>
+              </div>
+              <div class="item">
+                <a href="/document/5.0.0-beta/en/overview" target="_blank"
+                  >5.0.0-beta</a
+                >
+              </div>
+              <div class="item">
+                <a href="/document/5.0.0-alpha/en/overview" target="_blank"
+                  >5.0.0-alpha</a
+                >
+              </div>
+              <div class="item">
+                <a href="/document/4.1.1/en/overview" target="_blank">4.1.1</a>
+              </div>
+              <div class="item">
+                <a href="/document/4.1.0/en/overview" target="_blank">4.1.0</a>
+              </div>
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/document/legacy/4.x/document/cn/overview"
+                  target="_blank"
+                  >4.x(遗留)</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/document/legacy/3.x/document/cn/overview"
+                  target="_blank"
+                  >3.x(遗留)</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/document/legacy/2.x/cn/"
+                  target="_blank"
+                  >2.x(遗留)</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="http://shardingsphere.apache.org/document/legacy/1.x/cn/"
+                  target="_blank"
+                  >1.x(遗留)</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <span>社区</span>
+
+            <div class="links">
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/community/cn/contribute/"
+                  target="_blank"
+                  >参与贡献</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/community/cn/team/"
+                  target="_blank"
+                  >团队成员</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://github.com/apache/shardingsphere/wiki"
+                  target="_blank"
+                  >Wiki</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://github.com/apache/shardingsphere"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://github.com/apache/shardingsphere/issues"
+                  target="_blank"
+                  >缺陷跟踪</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/community/cn/powered-by/"
+                  target="_blank"
+                  >采用公司</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/community/en/contribute/subscribe/"
+                  target="_blank"
+                  >邮件列表</a
+                >
+              </div>
+              <div class="item">
+                <a href="https://twitter.com/ShardingSphere" target="_blank"
+                  >推特</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://apacheshardingsphere.slack.com/messages/C026MLH7F34"
+                  target="_blank"
+                  >讨论群组</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div id="btn-subproject" class="item">
+            <span>子项目</span>
+
+            <div class="links">
+              <div class="item">
+                <a
+                  class="i-drop-list"
+                  href="http://shardingsphere.apache.org/elasticjob/"
+                  target="_blank"
+                  >ElasticJob</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div id="btn-community" class="item">
+            <span>博客</span>
+
+            <div class="links">
+              <div class="item">
+                <a
+                  href="https://shardingsphere.apache.org/blog/cn/material"
+                  target="_blank"
+                  >精选集</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://github.com/apache/shardingsphere/issues/650"
+                  target="_blank"
+                  >汇总集</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div id="btn-asf" class="item">
+            <span>ASF</span>
+
+            <div class="links">
+              <div class="item">
+                <a href="https://www.apache.org" target="_self">基金会</a>
+              </div>
+              <div class="item">
+                <a href="https://www.apache.org/licenses/" target="_self"
+                  >证书</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://www.apache.org/events/current-event"
+                  target="_self"
+                  >事件</a
+                >
+              </div>
+              <div class="item">
+                <a href="https://www.apache.org/security/" target="_self"
+                  >安全</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://www.apache.org/foundation/sponsorship.html"
+                  target="_self"
+                  >赞助</a
+                >
+              </div>
+              <div class="item">
+                <a
+                  href="https://www.apache.org/foundation/thanks.html"
+                  target="_self"
+                  >致谢</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
 
