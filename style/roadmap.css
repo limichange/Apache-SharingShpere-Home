@@ -167,3 +167,17 @@
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+.slick-arrow {
+  transition: all 0.1s ease-in-out;
+}
+
+.slick-arrow:hover {
+  transform-origin: center;
+  transform: translate(0, -50%) scale(1.1);
+}
+
+.slick-arrow:active {
+  transform-origin: center;
+  transform: translate(0, -50%) scale(0.9);
+}
