@@ -1,12 +1,9 @@
-//
-// First Section
-//
-
 $(document).ready(function () {
+  // roadmap section
   $('.roadmapSlick').slick({
     infinite: false,
     speed: 300,
-    variableWidth: true,
+    letiableWidth: true,
     draggable: false,
     arrows: true,
 
@@ -33,10 +30,10 @@ $(document).ready(function () {
         $('.shadow.left').hide()
       }
 
-      var rightEndIndex = 6
+      let rightEndIndex = 6
 
       // get window width
-      var windowWidth = $(window).width()
+      let windowWidth = $(window).width()
 
       if (windowWidth > 1900) {
         rightEndIndex = 0
@@ -64,6 +61,7 @@ $(document).ready(function () {
 
   $('.shadow.left').hide()
 
+  // navigation
   $('.navigation .iconMenu').click(function () {
     $('.mobileMenu').show()
     bodyScrollLock.disableBodyScroll(document.querySelector('.mobileMenu'))
@@ -74,7 +72,7 @@ $(document).ready(function () {
 
   $('.mobileMenu .item').click(function () {
     // this item
-    var item = $(this)
+    let item = $(this)
     item.find('.arrowIcon').toggleClass('active')
     item.find('+ .itemList').slideToggle()
   })
@@ -84,8 +82,9 @@ $(document).ready(function () {
     bodyScrollLock.enableBodyScroll(document.querySelector('.mobileMenu'))
   })
 
+  // footer
   function checkFooterSize() {
-    var windowWidth = $(window).width()
+    let windowWidth = $(window).width()
 
     if (windowWidth < 740) {
       $('.footerNavigation .links').hide()
@@ -102,14 +101,14 @@ $(document).ready(function () {
   })
 
   $('.footerNavigation .item').click(function () {
-    var windowWidth = $(window).width()
+    let windowWidth = $(window).width()
 
     if (windowWidth >= 740) {
       return
     }
 
     // this item
-    var item = $(this)
+    let item = $(this)
     item.find('.links').slideToggle()
   })
 })
