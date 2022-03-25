@@ -3,8 +3,8 @@
     background-image: url('/images/roadmap/background.svg');
     background-repeat: no-repeat;
     background-position: right top;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   #roadmapSection .cardItem:first-child {
@@ -35,8 +35,8 @@
 
 @media (min-width: 1980px) {
   #roadmapSection {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 160px;
+    padding-bottom: 160px;
   }
 
   #roadmapSection .shadow,
