@@ -33,19 +33,23 @@ $(document).ready(function () {
         $('.shadow.left').hide()
       }
 
-      var rightEndIndex = 4
+      var rightEndIndex = 6
 
       // get window width
       var windowWidth = $(window).width()
 
       if (windowWidth > 1900) {
         rightEndIndex = 0
-      } else if (windowWidth > 1368) {
+      } else if (windowWidth > 1380) {
         rightEndIndex = 1
-      } else if (windowWidth > 1068) {
+      } else if (windowWidth > 1124) {
         rightEndIndex = 2
       } else if (windowWidth > 868) {
         rightEndIndex = 3
+      } else if (windowWidth > 820) {
+        rightEndIndex = 4
+      } else if (windowWidth > 740) {
+        rightEndIndex = 5
       }
 
       if (nextSlide > rightEndIndex) {
