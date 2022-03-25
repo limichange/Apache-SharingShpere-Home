@@ -8,7 +8,7 @@
   /* backdrop-filter: blur(5px); */
 
   width: 100%;
-  max-width: 1440px;
+  max-width: 1536px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -231,6 +231,12 @@
   height: 12px;
   margin: 0 8px;
   border-left: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+@media (min-width: 1636px) {
+  .navigation {
+    padding: 24px 0;
+  }
 }
 
 @media (min-width: 1000px) {
