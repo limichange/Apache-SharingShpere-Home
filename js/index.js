@@ -3,7 +3,7 @@ $(document).ready(function () {
   $('.roadmapSlick').slick({
     infinite: false,
     speed: 300,
-    letiableWidth: true,
+    variableWidth: true,
     draggable: false,
     arrows: true,
 
