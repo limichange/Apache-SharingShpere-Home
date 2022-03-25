@@ -70,10 +70,6 @@ button.primary {
   color: #ffffff;
 }
 
-button.primary:hover {
-  border-color: #ffb895;
-}
-
 button.primary:active {
   background-color: white;
   border-color: #fe8244;
